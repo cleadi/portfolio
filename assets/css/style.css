@@ -1,10 +1,11 @@
-* {
-    box-sizing: border-box;
+html {
+    height: 100%;
 }
 
 body {
+    color: whitesmoke;
+    background-color: #80ADCB;
     font-family: Arial;
-    margin: 0;
 }
 
 /* HEADER START */
@@ -13,7 +14,7 @@ header {
     position: 0;
     width: 100%;
     height: 100px;
-    background-color: darkgray;
+    background-color: #251515;   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +23,7 @@ header {
 
 header h1 {
     font-size: 24px;
+    color: whitesmoke;
     font-weight: bold;
     padding: 10px;
 }
@@ -39,13 +41,15 @@ nav a {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 #projects {
-    background-color:lightskyblue;
+    font-size: 14px;
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
     flex: 1;
     padding: 20px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 #projects h2 {
@@ -57,7 +61,27 @@ a {
     text-decoration: none;
 }
 
-#about section {
+.cards {
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    /* flex: 0 0 400px; */
+}
+
+/* #card1 {
+    width: auto;
+}
+
+#card2 {
+    width: auto;
+}
+
+#card3 {
+    width: auto;
+} */
+
+#about {
     font-size: 12px;
     line-height: 16px;
     padding: 8px;
@@ -65,20 +89,8 @@ a {
     margin-bottom: 16px;
 }
 
-.card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-}
-
-.aboutdillon {
-    background-color: wheat;
-    text-align: center;
-}
-
-.aboutdillon h2 {
+#about h2 {
+    color: whitesmoke;
     font-size: 24px;
     padding-bottom: 10px;
 }
@@ -92,30 +104,34 @@ a {
 
 /* FOOTER START */
 footer {
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 100px;
-    background-color: darkgray;
+    height: 50px;
+    background-color: #251515;  
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer a {
+    color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
     padding: 10px;
 }
 
 footer h6 {
+    color: whitesmoke;
     font-size: 18px;
     padding: 10px;
+    justify-content: flex-start;
 }
 /* FOOTER STOP */
 
 @media screen and (max-width: 768px) {
+    header,
     main,
-    aside,
     footer {
       flex-direction: column;
     }
