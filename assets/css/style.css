@@ -1,10 +1,5 @@
-html {
-    height: 100%;
-}
-
 body {
-    color: whitesmoke;
-    background-color: #80ADCB;
+    background-color: #CBBEB5;
     font-family: Arial;
 }
 
@@ -45,11 +40,9 @@ main {
 }
 
 #projects {
-    font-size: 14px;
-    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
     flex: 1;
+    font-size: 14px;
     padding: 20px;
-    /* justify-content: center; */
 }
 
 #projects h2 {
@@ -66,27 +59,15 @@ a {
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    /* flex: 0 0 400px; */
 }
-
-/* #card1 {
-    width: auto;
-}
-
-#card2 {
-    width: auto;
-}
-
-#card3 {
-    width: auto;
-} */
 
 #about {
+    flex: 1;
     font-size: 12px;
-    line-height: 16px;
-    padding: 8px;
-    width: 25%;
-    margin-bottom: 16px;
+    padding: 20px;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 #about h2 {
@@ -96,22 +77,27 @@ a {
 }
 
 .dillon {
-    height: 300 px;
-    width: 200px;
-    border: solid 2px black;
+    max-width: 100%;
+    height: auto;
+    border: solid 2px #251515;
+}
+
+.codelaptop {
+    max-width: 100%;
+    height: auto;
+    border: solid 2px #251515;
 }
 /* MAIN STOP */
 
 /* FOOTER START */
 footer {
-    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 50px;
     background-color: #251515;  
-    display: flex;
-    flex-wrap: wrap;
 }
 
 footer a {
@@ -119,6 +105,7 @@ footer a {
     font-size: 18px;
     text-decoration: none;
     padding: 10px;
+    justify-content: flex-end;
 }
 
 footer h6 {
