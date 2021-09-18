@@ -55,6 +55,9 @@ a {
 }
 
 .cards {
+    width: 100%;
+    height: auto;
+    border: solid 2px #251515;
     border-style: groove;
     border-width: 1px;
     border-radius: 10px;
@@ -76,17 +79,12 @@ a {
     padding-bottom: 10px;
 }
 
-.dillon {
+.photos {
     width: 100%;
     height: auto;
     border: solid 2px #251515;
 }
 
-.codelaptop {
-    width: 100%;
-    height: auto;
-    border: solid 2px #251515;
-}
 /* Trying to find a way to adjust the size of the first .cards div tag */
 
 /* .cards:first-child {
