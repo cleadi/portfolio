@@ -4,51 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/eric-meyer-reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <title>Dillon Cleaver: Web Developer</title>
 </head>
 <body>
 
     <header>
-        <h1>Dillon Cleaver: Web Developer</h1>
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+        <nav class="navbar justify-content-center py-2 py-lg-4">
+            <h1 class="navbar display-4">Dillon Cleaver: Web Developer</h1>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>   
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <div class="cards">
-                <a href="https://github.com/cleadi/semantic-tagging" target="_blank"><h2>Semantic Tagging</h2></a>
-                <img class="photos" src="./assets/images/goran-ivos-iacpoKgpBAM-unsplash.jpg" alt="Laptop with some code displayed on the screen." />
-                <p> For this project I added semantic HTML elements in place of div tags to optimize accessibility and SEO. I followed a logical structure independent of styling and positioning and also added accessible alt attributes to HMTL image tags. Heading attributes fall in sequential order. Finally, I adjusted the title to more precisely describe web page.</p>
-            </div>
-            <div class="cards">
-                <a href="#"><h2>JavaScript Project</h2></a>
-                <img class="photos" src="./assets/images/sudharshan-tk-mM9vVJ2oDeI-unsplash.jpg" alt="JavaScript code." />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus odit fugiat magni fuga officia officiis ut. Necessitatibus molestias nobis error optio reprehenderit iste alias qui porro harum facere magni maiores ex, excepturi, at laborum numquam, quasi quas corporis culpa deserunt deleniti doloremque vitae sunt nesciunt. Quia maiores numquam qui laborum voluptate sed nesciunt a aperiam inventore impedit omnis excepturi tempore maxime quam voluptates culpa reprehenderit in ullam, fugiat libero consequuntur quidem? Architecto, perferendis beatae!</p>
-            </div>
-            <div class="cards">
-                <a href="#"><h2>React Project</h2></a>
-                <img class="photos" src="./assets/images/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg" alt="JavaScript code." />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus odit fugiat magni fuga officia officiis ut. Necessitatibus molestias nobis error optio reprehenderit iste alias qui porro harum facere magni maiores ex, excepturi, at laborum numquam, quasi quas corporis culpa deserunt deleniti doloremque vitae sunt nesciunt. Quia maiores numquam qui laborum voluptate sed nesciunt a aperiam inventore impedit omnis excepturi tempore maxime quam voluptates culpa reprehenderit in ullam, fugiat libero consequuntur quidem? Architecto, perferendis beatae!</p>
-            </div>
-        </section>
+    <main class="container-fluid">
+        
+        <div class="justify-content-around col-12 row mt-4">
 
-        <aside id="about">
-            <h2>Dillon Cleaver</h2>
-            <img class="photos" src="./assets/images/dillon-bw.jpg" alt="Dillon Cleaver profile photo" />
-            <p>Hi! I'm Dillon! I've long been interested in technology, writing, communication, design, psychology, and how people interact with software and user interfaces. I hope to bring those skills with me to compliment the HTML, CSS, and JavaScript I've been studying on my path to becoming a fully certfied we developer. Based in Minneapolis, MN.</p>
-        </aside>
+            <div class="card mt-4 mb-4" style="width: 18rem;">
+                <img src="./assets/images/nextflix-home-page.jpg" class="card-img-top" alt="Nextflix home page screenshot" />
+                <div class="card-body">
+                    <h5 class="card-title mt-3 mb-3">
+                        <a href="https://github.com/cleadi/nextflix" target="_blank">Nextflix: Boot Camp Group Project #1</a>
+                    </h5>
+                    <p class="card-text mb-1">User is able to see a short list of current movies that come from The Movie Database
+                        (TMDB) API. On the home page, user is able to search for movies based on their titles; i.e., if the user is
+                        searching for the movie "Halloween" they will see four results based on popularity. User is able to save a
+                        movie to their favorites list by clicking on the favorites button on the movie card. User can then see their
+                        favorites displayed on the favorites page by clicking the text link in the header navigation area "See your
+                        favorites." User can remove favorties from their favorites list by clicking on the remove button in the
+                        movie card on the favorites page. To search for new movies to add to their favorites, the user can click on
+                        the link or on the title element "Nextflix" to be taken back to the home page, where they can search for new
+                        titles.</p>
+                </div>
+            </div>
+            <div class="card mt-4 mb-4" style="width: 18rem;">
+                <img src="./assets/images/code-quiz.jpg" class="card-img-top" alt="JavaScript Code Quiz home page screenshot" />
+                <div class="card-body">
+                    <h5 class="card-title mt-3 mb-3">
+                        <a href="https://github.com/cleadi/code-quiz" target="_blank">JavaScript Code Quiz</a>
+                    </h5>
+                    <p class="card-text mb-1">Created a code quiz with at least five multiple choice questions. When user clicks the start button at the beginning, a timer starts giving the user 60 seconds to complete the quiz. Each correct answer earns a point and user moves on to next question. When a question is answered incorrectly, 3 seconds is removed from the clock. When all questions are answered correctly OR the timer hits 0, the quiz is over. When the game is over the user can save their initals and score.</p>
+                </div>
+            </div>
+            <div class="card mt-4 mb-4" style="width: 18rem;">
+                <img src="./assets/images/home-page.png" class="card-img-top" alt="Workday planner home page screenshot" />
+                <div class="card-body">
+                    <h5 class="card-title mt-3 mb-3">
+                        <a href="https://github.com/cleadi/work-day-scheduler" target="_blank">Workday Planner</a>
+                    </h5>
+                    <p class="card-text mb-1"> User can add hourly events to a work day planner and save (to local storage) so that the events persist even upon page refresh. When the page opens, the current day is displayed at the top of the calender (in the header). Scrolling down shows timeblocks for standard business hours. Each timeblock is color coded to indicate whether or not the event is past, present, or future.</p>
+                </div>
+            </div>
+
+            <div class="card mt-4 mb-4" style="width: 18rem;">
+                <img src="./assets/images/dillon-bw.jpg" class="card-img-top" alt="Dillon Cleaver's profile photo" />
+                <div class="card-body">
+                    <h5 class="card-title justify-content-center">Dillon Cleaver</h5>
+                    <p class="card-text">Hi! I'm Dillon! I've long been interested in technology, writing,
+                        communication, design, psychology, and how people interact with software and user
+                        interfaces. I hope to bring those skills with me to compliment the HTML, CSS, and JavaScript
+                        I've been studying on my path to becoming a fully certfied we developer. Based in
+                        Minneapolis, MN.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer id="contact">
-        <h6>© 2021 Dillon Cleaver</h6>
-        <a href="https://github.com/cleadi" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/dillon-cleaver/" target="_blank">LinkedIn</a>
+    <footer id="contact" class="page-footer font-small pt-4 pb-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">© 2021 Dillon Cleaver</h5>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <a href="https://www.linkedin.com/in/dillon-cleaver/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <a href="https://github.com/cleadi" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

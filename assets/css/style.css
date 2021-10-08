@@ -1,129 +1,22 @@
 body {
-    background-color: #CBBEB5;
-    font-family: Arial;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER START */
 header {
-    top: 0;
-    position: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #251515;   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
+    color: whitesmoke;
 }
 
-header h1 {
-    font-size: 24px;
-    color: whitesmoke;
+.card-title {
+    font-size: large;
     font-weight: bold;
-    padding: 10px;
 }
 
-nav a {
-    font-size: 18px;
-    color: whitesmoke;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-/* HEADER STOP */
-
-/* MAIN START */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-#projects {
-    flex: 2;
-    font-size: 14px;
-    padding: 20px;
-}
-
-#projects h2 {
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.cards {
-    width: 100%;
-    height: auto;
-    border: solid 2px #251515;
-    border-style: groove;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#about {
-    flex: 1;
-    font-size: 16px;
-    padding: 20px;
-    border-style: groove;
-    border-width: 1px;
-    border-radius: 10px;
-}
-
-#about h2 {
-    color: whitesmoke;
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-
-.photos {
-    width: 100%;
-    height: auto;
-    border: solid 2px #251515;
-}
-
-/* Trying to find a way to adjust the size of the first .cards div tag */
-
-/* .cards:first-child {
-    width: 50%;
-} */
-
-/* MAIN STOP */
-
-/* FOOTER START */
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    left: 0;
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    background-color: #251515;  
 }
-
-footer a {
-    color: whitesmoke;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px;
-    justify-content: flex-end;
-}
-
-footer h6 {
-    color: whitesmoke;
-    font-size: 18px;
-    padding: 10px;
-    justify-content: flex-start;
-}
-/* FOOTER STOP */
-
-@media screen and (max-width: 768px) {
-    header,
-    main,
-    footer {
-      flex-direction: column;
-    }
-  }
