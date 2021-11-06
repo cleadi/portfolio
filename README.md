@@ -1,5 +1,5 @@
-# portfolio
-Boot Camp HW #2 (Updated)
+# Dillon's Boot Camp Portfolio
+Boot Camp HW #2 (Updated to include the second group project)
 
 ## Project Description
 - Portfolio page has clickable links from navigation bar to about me, projects, and contact information (in the footer).
@@ -7,7 +7,7 @@ Boot Camp HW #2 (Updated)
 - Website is responsive, on-page elements adjust for smaller windows and screen sizes.
 
 ## Screenshots
-![dillon-cleaver-portfolio](assets/images/portfolio-home-page.jpg)
+![dillon-cleaver-portfolio](assets/images/home-page-screenshot.jpg)
 
 ## Website link
 https://cleadi.github.io/portfolio/
